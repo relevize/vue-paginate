@@ -1,30 +1,30 @@
-# vue-paginate [![CDNJS version](https://img.shields.io/cdnjs/v/vue-paginate.svg)](https://cdnjs.com/libraries/vue-paginate)
+# NOTE: THIS PACKAGE FIXES AN ISSUE WITH vue-paginate THAT PREVENTS IT FROM REPOPULATING LISTS ONCE THEY'VE BEEN FILTERED TO 0
 
-> This version only works with Vue 2.0. For Vue 1.0, check out the [1.0 branch](https://github.com/TahaSh/vue-paginate/tree/1.0).
+> This version only works with Vue 2.0. For Vue 1.0, check out the [1.0 branch](https://github.com/TahaSh/vue-paginate-fix/tree/1.0).
 
 The idea of `vue-paginate` is pretty simple. You give it an array of items; specify how many items per page; then get your list of items paginated!
 
 ## Setup
 
-```
-npm install vue-paginate --save
+``
+npm install vue-paginate-fix --save
 ```
 
-You have two ways to setup `vue-paginate`:
+You have two ways to setup `vue-paginate-fix`:
 
 #### CommonJS (Webpack/Browserify)
 
 - ES6
 
 ```js
-import VuePaginate from 'vue-paginate'
+import VuePaginate from 'vue-paginate-fix'
 Vue.use(VuePaginate)
 ```
 
 - ES5
 
 ```js
-var VuePaginate = require('vue-paginate')
+var VuePaginate = require('vue-paginate-fix')
 Vue.use(VuePaginate)
 ```
 
@@ -36,7 +36,7 @@ Include it directly with a `<script>` tag. In this case, you don't need to write
 
 > Before you start, you may want to check a live example on [jsfiddle](https://jsfiddle.net/taha_sh/hmapx482/).
 
-`vue-paginate` consists of two main components: `Paginate` and `PaginateLinks`. And both get registered globally once the plugin is installed.
+`vue-paginate-fix` consists of two main components: `Paginate` and `PaginateLinks`. And both get registered globally once the plugin is installed.
 
 To paginate any list of data, we have to follow these three small steps:
 
@@ -204,7 +204,7 @@ Note: this example is based on the previous example.
 
 ### Types of paginate links
 
-`vue-paginate` provides us with three different types of pagination links:
+`vue-paginate-fix` provides us with three different types of pagination links:
 
 1. Full list of links. This is the default behavior, which displays all available page links from page 1 to N.
 2. Simple links. It contains only two links: *Previous* and *Next*.
@@ -344,7 +344,7 @@ An important thing to note here is `v-if="$refs.paginator"`. We needed to do tha
 
 ### Paginate container
 
-The default element `vue-paginate` uses for the `<paginate>` container is `UL`. But, of course, you can change it to whatever you want using the `tag` prop. And the same is true for its class using the `class` prop.
+The default element `vue-paginate-fix` uses for the `<paginate>` container is `UL`. But, of course, you can change it to whatever you want using the `tag` prop. And the same is true for its class using the `class` prop.
 
 ``` html
 <paginate
@@ -396,7 +396,7 @@ By default, paginated links will always be displayed even if there's only one pa
 
 ### Links customization
 
-In `vue-paginate`, you can customize every bit of your pagination links.
+In `vue-paginate-fix`, you can customize every bit of your pagination links.
 
 But first, let’s see the html structure used for all link types:
 
